@@ -4,12 +4,12 @@ package domain;
  *
  * @author bryan
  */
-public class TimeTable {
+public class Schedule { //horario
 
     int courseID;
     String period, schedule1, schedule2;
 
-    public TimeTable(int courseID, String period, String schedule1, String schedule2) {
+    public Schedule(int courseID, String period, String schedule1, String schedule2) {
         this.courseID = courseID;
         this.period = period;
         this.schedule1 = schedule1;
