@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="813.0" style="-fx-background-color: #E5E7E9;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.FXMLStudentsPage1Controller">
+   <children>
+      <Text fx:id="txtTitle" fill="#2471a3" layoutX="300.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro" wrappingWidth="149.2060546875">
+         <font>
+            <Font name="Optima Regular" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableStudents" layoutX="17.0" layoutY="78.0" prefHeight="234.0" prefWidth="779.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="89.0" text="Cédula" />
+          <TableColumn fx:id="colStudentID" prefWidth="79.0" text="Carné" />
+            <TableColumn fx:id="colName" prefWidth="123.0" text="Nombre" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="87.0" text="Teléfono" />
+            <TableColumn fx:id="colDirection" prefWidth="119.0" text="Dirección" />
+            <TableColumn fx:id="colEmail" prefWidth="149.0" text="Email" />
+            <TableColumn fx:id="colCareer" prefWidth="132.0" text="Carrera" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnChange" layoutX="366.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnChange" prefHeight="36.0" prefWidth="139.0" style="-fx-background-color: #2980B9;" text="Modificar" textFill="#17202a">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="612.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #2980B9;" text="Eliminar">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="119.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #2980B9;" text="Agregar" textFill="#17202a">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

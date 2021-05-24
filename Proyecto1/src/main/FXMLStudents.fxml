@@ -1,11 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLStudentsController">
-    
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E5E7E9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLStudentsController">
+   <children>
+      <Text fx:id="txtTitle" fill="#2471a3" layoutX="118.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de estudiantes:" textAlignment="CENTER">
+         <font>
+            <Font name="Optima Regular" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTitle2" layoutX="156.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese sus datos personales:" wrappingWidth="315.93359375">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtID" fill="#2e4053" layoutX="25.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cédula:">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtStudentID" fill="#2e4053" layoutX="25.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carné:">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtName" fill="#2e4053" layoutX="25.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre: ">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtPhoneNumber" fill="#2e4053" layoutX="25.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono: ">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDirection" fill="#2e4053" layoutX="25.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección: ">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtEmail" fill="#2e4053" layoutX="25.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtCareer" fill="#2e4053" layoutX="25.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Career:">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" layoutX="453.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #2980B9;" text="Agregar" textFill="#17202a">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtFieldID" layoutX="147.0" layoutY="104.0" onAction="#txtFieldID" />
+      <TextField fx:id="txtFieldStudentID" layoutX="147.0" layoutY="138.0" onAction="#txtFieldStudentID" />
+      <TextField fx:id="txtFieldName" layoutX="147.0" layoutY="174.0" onAction="#txtFieldName" />
+      <TextField fx:id="txtFieldPhoneNumber" layoutX="147.0" layoutY="213.0" onAction="#txtFieldPhoneNumber" />
+      <TextField fx:id="txtFieldDirection" layoutX="147.0" layoutY="253.0" onAction="#txtFieldDirection" />
+      <TextField fx:id="txtFieldEmail" layoutX="147.0" layoutY="288.0" onAction="#txtFieldEmail" />
+      <ComboBox fx:id="comboBoxCareer" layoutX="147.0" layoutY="328.0" onAction="#comboBoxCareer" prefHeight="27.0" prefWidth="167.0" />
+      <Button fx:id="btnWatchStudents" layoutX="453.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnWatchStudents" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #2980B9;" text="Ver registro" textFill="#17202a">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

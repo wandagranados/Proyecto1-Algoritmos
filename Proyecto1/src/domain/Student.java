@@ -1,6 +1,7 @@
 
 package domain;
 import java.util.Date;
+import javafx.scene.control.ListCell;
 /**
  *
  * @author bryan
@@ -20,6 +21,12 @@ public class Student {
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.address = address;
+    }
+
+    public Student(int id, int studentID, String name, String phoneNumber, String direction, String email, ListCell<?> career) {
+    }
+
+    public Student(int id, int studentID, String firstname, String phoneNumber, String direction, String email) {
     }
 
     public int getId() {
