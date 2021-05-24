@@ -15,7 +15,7 @@ import javafx.scene.control.ComboBox;
 /**
  * FXML Controller class
  *
- * @author wandagranados
+ * @author wandagranados // nicole
  */
 public class FXMLCourseController implements Initializable {
     @FXML private ComboBox comboBox;

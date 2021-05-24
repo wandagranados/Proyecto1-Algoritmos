@@ -33,7 +33,7 @@ public class MainFXML extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLStudentsPage1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLCourse.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Sistema de Matrícula");
