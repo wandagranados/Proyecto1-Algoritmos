@@ -5,7 +5,6 @@
  */
 package main;
 
-import domain.Course;
 import java.awt.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
