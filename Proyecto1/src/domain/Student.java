@@ -12,7 +12,9 @@ public class Student {
     String studentID,lastname,firstname,phoneNumber,email,address;
     Date birthday;
 
-    public Student(int id, int careerID, String studentID, String lastname, String firstname, String phoneNumber, String email, String address) {
+  
+
+    public Student(int id, int careerID, String studentID, String lastname, String firstname, String phoneNumber, String email, String address, Date birthday) {
         this.id = id;
         this.careerID = careerID;
         this.studentID = studentID;
@@ -21,7 +23,12 @@ public class Student {
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.address = address;
+        this.birthday = birthday;
     }
+    
+    
+    
+    
 
     public Student(int id, int studentID, String name, String phoneNumber, String direction, String email, ListCell<?> career) {
     }
