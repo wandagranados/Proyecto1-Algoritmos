@@ -12,5 +12,6 @@ package domain;
 public class hola {
     public void Hola(){
         System.out.println("Hola Mundo");
+        System.out.println("Nicole");
     }
 }
