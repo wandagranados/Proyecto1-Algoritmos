@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -19,47 +18,44 @@
          </font>
       </Text>
       <Line endX="138.0" layoutX="358.0" layoutY="70.0" startX="-100.0" stroke="#040f46" />
-      <VBox layoutX="14.0" layoutY="81.0" prefHeight="294.0" prefWidth="173.0" spacing="10.0">
-         <children>
-            <Label alignment="TOP_CENTER" prefHeight="32.0" prefWidth="193.0" text="Select career" textAlignment="CENTER">
-               <font>
-                  <Font name="Times New Roman" size="24.0" />
-               </font>
-            </Label>
-            <ComboBox prefWidth="150.0" style="-fx-background-color: #2D4760;" />
-            <Label text="Label">
-               <font>
-                  <Font name="Times New Roman Bold" size="19.0" />
-               </font></Label>
-         </children>
-      </VBox>
-      <Button layoutX="627.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Add" textFill="WHITE">
+      <Button fx:id="btnAdd" layoutX="627.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Add" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
       </Button>
-      <TableView fx:id="TableCourses" layoutX="203.0" layoutY="100.0" prefHeight="334.0" prefWidth="390.0">
+      <TableView fx:id="tblTableCourses" layoutX="203.0" layoutY="100.0" prefHeight="334.0" prefWidth="390.0">
         <columns>
-          <TableColumn prefWidth="129.0" text="Description career" />
-          <TableColumn prefWidth="92.0" text=" Course name" />
-            <TableColumn prefWidth="89.0" text="Schelude" />
-            <TableColumn prefWidth="79.0" text="Professor" />
+          <TableColumn fx:id="colDescriptioncareer" prefWidth="129.0" text="Description career" />
+          <TableColumn fx:id="colCoursename" prefWidth="92.0" text=" Course name" />
+            <TableColumn fx:id="colCredits" prefWidth="89.0" text="Credits" />
+            <TableColumn fx:id="colCode" prefWidth="79.0" text="Code" />
         </columns>
       </TableView>
-      <Button layoutX="627.0" layoutY="185.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDelete" layoutX="627.0" layoutY="185.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutX="627.0" layoutY="238.0" mnemonicParsing="false" style="-fx-background-color: #2D4760;" text="Modify" textFill="WHITE">
+      <Button fx:id="btnModify" layoutX="627.0" layoutY="238.0" mnemonicParsing="false" style="-fx-background-color: #2D4760;" text="Modify" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutX="634.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: #2D4760;" text="Menu" textFill="WHITE">
+      <Button fx:id="btnMenu" layoutX="634.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: #2D4760;" text="Menu" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
       </Button>
+      <ComboBox fx:id="comboBox" layoutX="22.0" layoutY="132.0" onAction="#comboBoxWasUpdated" prefWidth="150.0" style="-fx-background-color: #2D4760;" />
+      <Label alignment="TOP_CENTER" layoutY="93.0" prefHeight="32.0" prefWidth="193.0" text="Select career" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="175.0" text="Label">
+         <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

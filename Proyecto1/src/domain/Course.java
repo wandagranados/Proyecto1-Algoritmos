@@ -1,20 +1,22 @@
 
 package domain;
 
+import java.util.Objects;
+
 
 /**
  *
- * @author bryan
+ * @author C03274
  */
 public class Course {
-    int credits,careerID;
-    String id,name ;
+    int credits,code;
+    String Description,Coursename ;
 
-    public Course(int credits, int careerID, String id, String name) {
+    public Course(int credits, int code, String Description, String Coursename) {
         this.credits = credits;
-        this.careerID = careerID;
-        this.id = id;
-        this.name = name;
+        this.code = code;
+        this.Description = Description;
+        this.Coursename = Coursename;
     }
 
     public int getCredits() {
@@ -25,33 +27,66 @@ public class Course {
         this.credits = credits;
     }
 
-    public int getCareerID() {
-        return careerID;
+    public int getcode() {
+        return code;
     }
 
-    public void setCareerID(int careerID) {
-        this.careerID = careerID;
+    public void setcode(int code) {
+        this.code = code;
     }
 
-    public String getId() {
-        return id;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
 
-    public String getName() {
-        return name;
+    public String getCoursename() {
+        return Coursename;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCoursename(String Coursename) {
+        this.Coursename = Coursename;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Course other = (Course) obj;
+        if (this.credits != other.credits) {
+            return false;
+        }
+        if (this.code != other.code) {
+            return false;
+        }
+        if (!Objects.equals(this.Description, other.Description)) {
+            return false;
+        }
+        if (!Objects.equals(this.Coursename, other.Coursename)) {
+            return false;
+        }
+        return true;
     }
 
     @Override
     public String toString() {
-        return "Course{" + "credits=" + credits + ", careerID=" + careerID + ", id=" + id + ", name=" + name + '}';
+        return "Course{" + "credits=" + credits + ", code=" + code + ", Description=" + Description + ", Coursename=" + Coursename + '}';
     }
     
     

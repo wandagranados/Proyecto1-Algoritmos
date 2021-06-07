@@ -9,116 +9,230 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="705.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="main.FXMLScheduleController">
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLScheduleController">
    <children>
-      <Text fill="#115379" layoutX="277.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule">
+      <Text fill="#115379" layoutX="419.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule">
          <font>
             <Font name="Times New Roman" size="41.0" />
          </font>
       </Text>
-      <Line endX="100.0" fill="#115379" layoutX="353.0" layoutY="72.0" startX="-100.0" stroke="#040f46" />
-      <VBox layoutX="14.0" layoutY="103.0" prefHeight="321.0" prefWidth="127.0">
+      <Line endX="100.0" fill="#115379" layoutX="498.0" layoutY="59.0" startX="-100.0" stroke="#040f46" />
+      <VBox layoutX="14.0" layoutY="105.0" prefHeight="278.0" prefWidth="180.0" spacing="10.0">
          <children>
-            <Label text="Label" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Label text="Label" />
+            <Label text="Business Informatics">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font></Label>
+            <CheckBox mnemonicParsing="false" prefHeight="16.0" prefWidth="162.0" text="Integrated Humanities Course I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Cinema and Literature">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Introduction to Computing and Informatics">
+               <font>
+                  <Font name="Times New Roman" size="10.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Logic for Computer Scientists">
+               <font>
+                  <Font name="Times New Roman" size="10.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text=" English Reading Strategies I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <Button mnemonicParsing="false" text="Option 1">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" text="Option 2">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Label text="Option select">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
          </children>
       </VBox>
-      <VBox layoutX="141.0" layoutY="98.0" prefHeight="297.0" prefWidth="119.0">
+      <VBox layoutX="205.0" layoutY="102.0" prefHeight="284.0" prefWidth="180.0" spacing="10.0">
          <children>
-            <Label text="Label" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Label text="Label" />
+            <Label text="Mathematics Teaching">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font>
+            </Label>
+            <CheckBox mnemonicParsing="false" text=" Integrated Humanities Course I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Theater Workshop">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Introduction to Pedagogy">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Admission Math">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text=" English Reading Strategies I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </CheckBox>
+            <Button mnemonicParsing="false" text="Option 1">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Option 2">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+            <Label text="Option select">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
          </children>
       </VBox>
-      <VBox layoutX="377.0" layoutY="136.0" prefHeight="200.0" prefWidth="100.0" />
-      <VBox layoutX="260.0" layoutY="104.0" prefHeight="297.0" prefWidth="100.0">
+      <VBox layoutX="407.0" layoutY="99.0" prefHeight="284.0" prefWidth="174.0" spacing="10.0">
          <children>
-            <Label text="Label" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Label text="Label" />
+            <Label text="Ecological Tourism">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font></Label>
+            <CheckBox mnemonicParsing="false" text="Integrated Humanities Course I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Music Appreciation">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Introduction to Anthropology">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Introduction to the Natural History of Costa Rica">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text=" English Reading Strategies I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <Button mnemonicParsing="false" text="Option 1">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" text="Option 2">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Label text="Option select">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
          </children>
       </VBox>
-      <VBox layoutX="537.0" layoutY="109.0" prefHeight="305.0" prefWidth="100.0">
+      <VBox layoutX="813.0" layoutY="97.0" prefHeight="284.0" prefWidth="174.0" spacing="10.0">
          <children>
-            <Label text="Label" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Label text="Label" />
+            <Label text="Business Management">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font></Label>
+            <CheckBox mnemonicParsing="false" text="Integrated Humanities Course I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Theater Workshop">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Introduction to Business Administration">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Precalculation">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text=" English Reading Strategies I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <Button mnemonicParsing="false" text="Option 1">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" text="Option 2">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Label text="Option select">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
          </children>
       </VBox>
-      <VBox layoutX="427.0" layoutY="111.0" prefHeight="200.0" prefWidth="100.0">
+      <VBox layoutX="605.0" layoutY="97.0" prefHeight="294.0" prefWidth="174.0" spacing="10.0">
          <children>
-            <Label text="Label" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <CheckBox mnemonicParsing="false" text="CheckBox" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Label text="Label" />
+            <Label text="English Teaching">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font></Label>
+            <CheckBox mnemonicParsing="false" text="Integrated Humanities Course I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Cinema and Literature">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="Psychosocial Bases of Education">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text="General Didactics">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></CheckBox>
+            <CheckBox mnemonicParsing="false" text=" English Reading Strategies I">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font></CheckBox>
+            <Button mnemonicParsing="false" text="Option 1">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" text="Option 2">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Label text="Option select">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
          </children>
       </VBox>
+      <Line endX="100.0" endY="-185.0" layoutX="98.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="90.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="294.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="286.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="497.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="489.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="697.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
+      <Line endX="100.0" endY="-185.0" layoutX="689.0" layoutY="297.0" startX="100.0" startY="134.0" stroke="#080d51" />
    </children>
 </AnchorPane>
