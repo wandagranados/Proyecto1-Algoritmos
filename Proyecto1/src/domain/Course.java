@@ -12,12 +12,13 @@ public class Course {
     int credits,code;
     String Description,Coursename ;
 
-    public Course(int credits, int code, String Description, String Coursename) {
+
+
+    public Course(String Coursename, String Description, int credits, int code) {
         this.credits = credits;
         this.code = code;
         this.Description = Description;
-        this.Coursename = Coursename;
-    }
+        this.Coursename = Coursename;}
 
     public int getCredits() {
         return credits;
