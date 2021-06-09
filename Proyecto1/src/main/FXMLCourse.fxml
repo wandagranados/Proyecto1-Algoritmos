@@ -19,7 +19,7 @@
          </font>
       </Text>
       <Line endX="138.0" layoutX="358.0" layoutY="70.0" startX="-100.0" stroke="#040f46" />
-      <Button fx:id="btnAdd" layoutX="627.0" layoutY="132.0" mnemonicParsing="false" onAction="#AddCourses" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Add" textFill="WHITE">
+      <Button fx:id="btnAdd" layoutX="627.0" layoutY="132.0" mnemonicParsing="false" onAction="#AddCourses" onMouseClicked="#AddCourses" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Add" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
@@ -32,12 +32,12 @@
             <TableColumn fx:id="colCode" prefWidth="79.0" text="Code" />
         </columns>
       </TableView>
-      <Button fx:id="btnDelete" layoutX="627.0" layoutY="185.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDelete" layoutX="627.0" layoutY="185.0" mnemonicParsing="false" onAction="#DeleteCourses" onMouseClicked="#Selection" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #2D4760;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="btnModify" layoutX="627.0" layoutY="238.0" mnemonicParsing="false" style="-fx-background-color: #2D4760;" text="Modify" textFill="WHITE">
+      <Button fx:id="btnModify" layoutX="627.0" layoutY="238.0" mnemonicParsing="false" onAction="#ModifyCourse" style="-fx-background-color: #2D4760;" text="Modify" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="23.0" />
          </font>
