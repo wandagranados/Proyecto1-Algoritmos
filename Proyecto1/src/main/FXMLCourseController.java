@@ -87,7 +87,7 @@ public class FXMLCourseController implements Initializable {
     }
 
     @FXML
-    private void AddCourses(ActionEvent event) {
+    private void AddCourses(ActionEvent event) {//This method adds the courses to the table
 
         try {
 
@@ -102,14 +102,14 @@ public class FXMLCourseController implements Initializable {
                 this.course.add(c);
                 this.tblTableCourses.setItems(course);
 
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);//Launches a window indicating that the course has been added
                 alert.setHeaderText(null);
                 alert.setTitle("Info");
                 alert.setContentText("Course added");
                 alert.showAndWait();
 
             } else {
-                Alert alert = new Alert(Alert.AlertType.ERROR);
+                Alert alert = new Alert(Alert.AlertType.ERROR); //Raises an alert when there is an error when entering an existing course
                 alert.setHeaderText(null);
                 alert.setTitle("Error");
                 alert.setContentText("The course exist");
@@ -119,13 +119,13 @@ public class FXMLCourseController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Error");
-            alert.setContentText("Incorrect format");
+            alert.setContentText("Incorrect format");//Raises an alert when an error exists when an invalid format is entered
             alert.showAndWait();
         }
     }
 
     @FXML
-    private void Selection(MouseEvent event) {
+    private void Selection(MouseEvent event) {//This method is used to select the courses to modify or delete them
 
         Course c = this.tblTableCourses.getSelectionModel().getSelectedItem();
 
@@ -138,10 +138,10 @@ public class FXMLCourseController implements Initializable {
     }
 
     @FXML
-    private void ModifyCourse(ActionEvent event) {
+    private void ModifyCourse(ActionEvent event) { //Method that modifies the courses already entered in the table by using the selection method already created previously
         Course c = this.tblTableCourses.getSelectionModel().getSelectedItem();
 
-        if (c == null) {
+        if (c == null) { //The if first verifies that the course is selected, then verifies the new changes and ends up refreshing the table so that the modifications appear
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Error");
@@ -190,7 +190,7 @@ public class FXMLCourseController implements Initializable {
     }
 
     @FXML
-    private void DeleteCourses(ActionEvent event) {
+    private void DeleteCourses(ActionEvent event) {//This method removes existing courses in the table
 
         Course c = this.tblTableCourses.getSelectionModel().getSelectedItem();
 
